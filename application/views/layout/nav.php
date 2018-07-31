@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
 
-        <title>บริษัท พราว</title>
+        <title>Wedding Card 88</title>
         <link rel="shortcut icon" href="<?php echo other_asset_url('images/logo.png'); ?>"
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -55,21 +55,24 @@
             .navbar {
                 font-family: Montserrat, sans-serif;
                 margin-bottom: 0;
-                background-color: #2d2d30;
+                /*background-color: #2d2d30;*/
+                background-color: #d45a72;
                 border: 0;
                 font-size: 11px !important;
                 letter-spacing: 4px;
                 opacity: 0.9;
             }
             .navbar li a, .navbar .navbar-brand { 
-                color: #d5d5d5 !important;
+                /*color: #d5d5d5 !important;*/
+                color: #fff !important;
             }
             .navbar-nav li a:hover {
                 color: #fff !important;
             }
             .navbar-nav li.active a {
                 color: #fff !important;
-                background-color: #29292c !important;
+                /*background-color: #29292c !important;*/
+                background-color: #9f847a !important;
             }
             .navbar-default .navbar-toggle {
                 border-color: transparent;
@@ -77,12 +80,14 @@
             .open .dropdown-toggle {
                 color: #fff;
                 background-color: #555 !important;
+                /*background-color: #9f847a !important;*/
             }
             .dropdown-menu li a {
                 color: #000 !important;
             }
             .dropdown-menu li a:hover {
-                background-color: red !important;
+                /*background-color: red !important;*/
+                background-color: #9f847a !important;
             }
 
         </style>
