@@ -1,0 +1,29 @@
+#form_brandcar #tblform_brandcar thead tr th:first-child {
+  max-width: 70px !important;
+  min-width: 70px !important;
+  width: 70px !important;
+  text-align: left;
+}
+#form_brandcar #tblform_brandcar thead tr th:nth-child(2) {
+  max-width: 60px !important;
+  min-width: 60px !important;
+  width: 60px !important;
+  text-align: right;
+}
+#form_brandcar #tblform_brandcar tbody tr[role=row] td:first-child {
+  max-width: 70px !important;
+  min-width: 70px !important;
+  text-overflow: ellipsis !important;
+  width: 70px !important;
+  overflow: hidden;
+  text-align: left;
+}
+#form_brandcar #tblform_brandcar tbody tr[role=row] td:nth-child(2) {
+  min-width: 60px !important;
+  max-width: 60px !important;
+  width: 60px !important;
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  text-align: right;
+}
+/*# sourceMappingURL=brand_main.css.map */

@@ -1,0 +1,43 @@
+#form_insurancetype #tblform_insurancetype thead tr th:first-child {
+  max-width: 150px !important;
+  min-width: 150px !important;
+  width: 150px !important;
+  text-align: left;
+}
+#form_insurancetype #tblform_insurancetype thead tr th:nth-child(2) {
+  max-width: 100px !important;
+  min-width: 100px !important;
+  width: 100px !important;
+  text-align: left;
+}
+#form_insurancetype #tblform_insurancetype thead tr th:nth-child(3) {
+  max-width: 60px !important;
+  min-width: 60px !important;
+  width: 60px !important;
+  text-align: right;
+}
+#form_insurancetype #tblform_insurancetype tbody tr[role=row] td:first-child {
+  max-width: 150px !important;
+  min-width: 150px !important;
+  text-overflow: ellipsis !important;
+  width: 150px !important;
+  overflow: hidden;
+  text-align: left;
+}
+#form_insurancetype #tblform_insurancetype tbody tr[role=row] td:nth-child(2) {
+  max-width: 100px !important;
+  min-width: 100px !important;
+  text-overflow: ellipsis !important;
+  width: 100px !important;
+  overflow: hidden;
+  text-align: left;
+}
+#form_insurancetype #tblform_insurancetype tbody tr[role=row] td:nth-child(3) {
+  min-width: 60px !important;
+  max-width: 60px !important;
+  width: 60px !important;
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  text-align: right;
+}
+/*# sourceMappingURL=insurancetype_main.css.map */

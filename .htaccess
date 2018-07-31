@@ -1,0 +1,18 @@
+#RewriteEngine On
+#RewriteBase /samnartrun/
+#RewriteCond $1 !^(index\.php|css|images|javascript|js)
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*)$ index.php [L]
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /wedding_b/
+#RewriteBase /backoffice/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond $1 !^(index\.php|images|assets|robots\.txt)
+RewriteRule ^(.*)$ index.php/$1 [L]
+</IfModule>
+<IfModule !mod_rewrite.c>
+ErrorDocument 404 /codeigniter/index.php
+</IfModule>

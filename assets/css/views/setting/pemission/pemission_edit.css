@@ -1,0 +1,71 @@
+#form_Account #tblform_Account thead tr th:first-child {
+  max-width: 100px !important;
+  min-width: 100px !important;
+  width: 100px !important;
+  text-align: left;
+}
+#form_Account #tblform_Account thead tr th:nth-child(2) {
+  max-width: 150px !important;
+  min-width: 150px !important;
+  width: 150px !important;
+  text-align: left;
+}
+#form_Account #tblform_Account tbody tr[role=row] td:first-child {
+  max-width: 100px !important;
+  min-width: 100px !important;
+  text-overflow: ellipsis !important;
+  width: 100px !important;
+  overflow: hidden;
+  text-align: left;
+}
+#form_Account #tblform_Account tbody tr[role=row] td:nth-child(2) {
+  min-width: 150px !important;
+  max-width: 150px !important;
+  width: 150px !important;
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  text-align: left;
+}
+#form_Function #tblform_Function thead tr th:first-child {
+  max-width: 100px !important;
+  min-width: 100px !important;
+  width: 100px !important;
+  text-align: left;
+}
+#form_Function #tblform_Function thead tr th:nth-child(2) {
+  max-width: 100px !important;
+  min-width: 100px !important;
+  width: 100px !important;
+  text-align: left;
+}
+#form_Function #tblform_Function thead tr th:nth-child(3) {
+  max-width: 150px !important;
+  min-width: 150px !important;
+  width: 150px !important;
+  text-align: left;
+}
+#form_Function #tblform_Function tbody tr[role=row] td:first-child {
+  max-width: 100px !important;
+  min-width: 100px !important;
+  text-overflow: ellipsis !important;
+  width: 100px !important;
+  overflow: hidden;
+  text-align: left;
+}
+#form_Function #tblform_Function tbody tr[role=row] td:nth-child(2) {
+  min-width: 100px !important;
+  max-width: 100px !important;
+  width: 100px !important;
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  text-align: left;
+}
+#form_Function #tblform_Function tbody tr[role=row] td:nth-child(3) {
+  min-width: 150px !important;
+  max-width: 150px !important;
+  width: 150px !important;
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  text-align: left;
+}
+/*# sourceMappingURL=pemission_edit.css.map */

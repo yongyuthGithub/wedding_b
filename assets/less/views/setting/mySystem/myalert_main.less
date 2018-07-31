@@ -1,0 +1,65 @@
+#form_alertlist {
+    #tblform_alertlist {
+        thead {
+            tr {
+                th {
+                    &:first-child {
+                        max-width: 250px !important;
+                        min-width: 250px !important;
+                        width: 250px !important;
+                        text-align: left;
+                    }
+
+                    &:nth-child(2) {
+                        max-width: 70px !important;
+                        min-width: 70px !important;
+                        width: 70px !important;
+                        text-align: right;
+                    }
+
+                    &:nth-child(3) {
+                        max-width: 70px !important;
+                        min-width: 70px !important;
+                        width: 70px !important;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                &[role=row] {
+                    td {
+                        &:first-child {
+                            max-width: 250px !important;
+                            min-width: 250px !important;
+                            text-overflow: ellipsis !important;
+                            width: 250px !important;
+                            overflow: hidden;
+                            text-align: left;
+                        }
+
+                        &:nth-child(2) {
+                            min-width: 70px !important;
+                            max-width: 70px !important;
+                            width: 70px !important;
+                            text-overflow: ellipsis !important;
+                            overflow: hidden !important;
+                            text-align: right;
+                        }
+
+                        &:nth-child(3) {
+                            min-width: 70px !important;
+                            max-width: 70px !important;
+                            width: 70px !important;
+                            text-overflow: ellipsis !important;
+                            overflow: hidden !important;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

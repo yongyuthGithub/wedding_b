@@ -1,0 +1,49 @@
+#form_Title {
+    #tblform_Title {
+        thead {
+            tr {
+                th {
+                    &:first-child {
+                        max-width: 70px !important;
+                        min-width: 70px !important;
+                        width: 70px !important;
+                        text-align: left;
+                    }
+
+                    &:nth-child(2) {
+                        max-width: 60px !important;
+                        min-width: 60px !important;
+                        width: 60px !important;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                &[role=row] {
+                    td {
+                        &:first-child {
+                            max-width: 70px !important;
+                            min-width: 70px !important;
+                            text-overflow: ellipsis !important;
+                            width: 70px !important;
+                            overflow: hidden;
+                            text-align: left;
+                        }
+
+                        &:nth-child(2) {
+                            min-width: 60px !important;
+                            max-width: 60px !important;
+                            width: 60px !important;
+                            text-overflow: ellipsis !important;
+                            overflow: hidden !important;
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

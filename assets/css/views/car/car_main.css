@@ -1,0 +1,127 @@
+#form_Car #tblform_Car thead tr th:first-child {
+  max-width: 70px !important;
+  min-width: 70px !important;
+  width: 70px !important;
+  text-align: left;
+}
+#form_Car #tblform_Car thead tr th:nth-child(2) {
+  max-width: 120px !important;
+  min-width: 120px !important;
+  width: 120px !important;
+  text-align: left;
+}
+#form_Car #tblform_Car thead tr th:nth-child(3) {
+  max-width: 120px !important;
+  min-width: 120px !important;
+  width: 120px !important;
+  text-align: left;
+}
+#form_Car #tblform_Car thead tr th:nth-child(4) {
+  max-width: 120px !important;
+  min-width: 120px !important;
+  width: 120px !important;
+  text-align: right;
+}
+#form_Car #tblform_Car tbody tr[role=row] td:first-child {
+  max-width: 70px !important;
+  min-width: 70px !important;
+  text-overflow: ellipsis !important;
+  width: 70px !important;
+  overflow: hidden;
+  text-align: left;
+}
+#form_Car #tblform_Car tbody tr[role=row] td:nth-child(2) {
+  min-width: 120px !important;
+  max-width: 120px !important;
+  width: 120px !important;
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  text-align: left;
+}
+#form_Car #tblform_Car tbody tr[role=row] td:nth-child(3) {
+  min-width: 120px !important;
+  max-width: 120px !important;
+  width: 120px !important;
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  text-align: left;
+}
+#form_Car #tblform_Car tbody tr[role=row] td:nth-child(4) {
+  min-width: 120px !important;
+  max-width: 120px !important;
+  width: 120px !important;
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  text-align: right;
+}
+#form_Car1 #tblform_Car1 thead tr th:first-child {
+  max-width: 70px !important;
+  min-width: 70px !important;
+  width: 70px !important;
+  text-align: left;
+}
+#form_Car1 #tblform_Car1 thead tr th:nth-child(2) {
+  max-width: 120px !important;
+  min-width: 120px !important;
+  width: 120px !important;
+  text-align: left;
+}
+#form_Car1 #tblform_Car1 thead tr th:nth-child(3) {
+  max-width: 100px !important;
+  min-width: 100px !important;
+  width: 100px !important;
+  text-align: left;
+}
+#form_Car1 #tblform_Car1 thead tr th:nth-child(4) {
+  max-width: 120px !important;
+  min-width: 120px !important;
+  width: 120px !important;
+  text-align: left;
+}
+#form_Car1 #tblform_Car1 thead tr th:nth-child(5) {
+  max-width: 120px !important;
+  min-width: 120px !important;
+  width: 120px !important;
+  text-align: right;
+}
+#form_Car1 #tblform_Car1 tbody tr[role=row] td:first-child {
+  max-width: 70px !important;
+  min-width: 70px !important;
+  text-overflow: ellipsis !important;
+  width: 70px !important;
+  overflow: hidden;
+  text-align: left;
+}
+#form_Car1 #tblform_Car1 tbody tr[role=row] td:nth-child(2) {
+  min-width: 120px !important;
+  max-width: 120px !important;
+  width: 120px !important;
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  text-align: left;
+}
+#form_Car1 #tblform_Car1 tbody tr[role=row] td:nth-child(3) {
+  min-width: 100px !important;
+  max-width: 100px !important;
+  width: 100px !important;
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  text-align: left;
+}
+#form_Car1 #tblform_Car1 tbody tr[role=row] td:nth-child(4) {
+  min-width: 120px !important;
+  max-width: 120px !important;
+  width: 120px !important;
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  text-align: left;
+}
+#form_Car1 #tblform_Car1 tbody tr[role=row] td:nth-child(5) {
+  min-width: 120px !important;
+  max-width: 120px !important;
+  width: 120px !important;
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  text-align: right;
+}
+/*# sourceMappingURL=car_main.css.map */

@@ -1,0 +1,64 @@
+.divImage{
+    position: relative;
+    height: 250px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #F2F2F2;
+    .imageShow{
+        position: absolute;
+        max-width: 90%;
+        max-height: 90%;
+        margin: auto;
+        top:0px;
+        bottom:0px;
+        left: 0px;
+        right: 0px;
+        z-index: 1;
+    }
+    
+    .btn-controll{
+        position: absolute;
+        left:0px;
+        right: 0px;
+        top:0px;
+        bottom: 0px;
+        background-color: rgb(231, 231, 231);
+        opacity: 0;
+        z-index: 2;
+        border-radius: 10px;
+        &:hover{
+            opacity: .9;
+        }
+        .btn-back{
+            position: absolute;
+            margin: auto;
+            top:0px;
+            bottom: 0px;
+            left:0px;
+            right: 0px;
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            .btnimage{
+                font-size: 200%;
+                line-height: 50px;
+                padding-left: 20px;
+                padding-right: 20px;
+                border:1px solid rgb(70, 70, 70);
+                color:rgb(70, 70, 70);
+                border-radius: 10px;
+                opacity: .2;
+                cursor: pointer;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+.showF{
+    >div{
+        padding-bottom: 10px;
+    }
+}

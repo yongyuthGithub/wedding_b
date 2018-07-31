@@ -1,0 +1,43 @@
+#form_Customer #tblform_Customer thead tr th:first-child {
+  max-width: 70px !important;
+  min-width: 70px !important;
+  width: 70px !important;
+  text-align: left;
+}
+#form_Customer #tblform_Customer thead tr th:nth-child(2) {
+  max-width: 250px !important;
+  min-width: 250px !important;
+  width: 250px !important;
+  text-align: left;
+}
+#form_Customer #tblform_Customer thead tr th:nth-child(3) {
+  max-width: 120px !important;
+  min-width: 120px !important;
+  width: 120px !important;
+  text-align: right;
+}
+#form_Customer #tblform_Customer tbody tr[role=row] td:first-child {
+  max-width: 70px !important;
+  min-width: 70px !important;
+  text-overflow: ellipsis !important;
+  width: 70px !important;
+  overflow: hidden;
+  text-align: left;
+}
+#form_Customer #tblform_Customer tbody tr[role=row] td:nth-child(2) {
+  min-width: 250px !important;
+  max-width: 250px !important;
+  width: 250px !important;
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  text-align: left;
+}
+#form_Customer #tblform_Customer tbody tr[role=row] td:nth-child(3) {
+  min-width: 120px !important;
+  max-width: 120px !important;
+  width: 120px !important;
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  text-align: right;
+}
+/*# sourceMappingURL=customer_main.css.map */

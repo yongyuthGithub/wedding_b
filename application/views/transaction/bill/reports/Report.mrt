@@ -1,0 +1,1130 @@
+{
+  "ReportVersion": "2018.1.6.0",
+  "ReportGuid": "16e61d3799fe4cea83a5fb4e3e7ba3a0",
+  "ReportName": "Report",
+  "ReportAlias": "Report",
+  "ReportCreated": "/Date(1522261189000+0700)/",
+  "ReportChanged": "/Date(1528228209247+0700)/",
+  "EngineVersion": "EngineV2",
+  "ReportUnit": "Inches",
+  "Script": "using System;\r\nusing System.Drawing;\r\nusing System.Windows.Forms;\r\nusing System.Data;\r\nusing Stimulsoft.Controls;\r\nusing Stimulsoft.Base.Drawing;\r\nusing Stimulsoft.Report;\r\nusing Stimulsoft.Report.Dialogs;\r\nusing Stimulsoft.Report.Components;\r\n\r\nnamespace Reports\r\n{\r\n    public class Report : Stimulsoft.Report.StiReport\r\n    {\r\n        public Report()        {\r\n            this.InitializeComponent();\r\n        }\r\n\r\n        #region StiReport Designer generated code - do not modify\r\n\t\t#endregion StiReport Designer generated code - do not modify\r\n    }\r\n}\r\n",
+  "ReferencedAssemblies": {
+    "0": "System.Dll",
+    "1": "System.Drawing.Dll",
+    "2": "System.Windows.Forms.Dll",
+    "3": "System.Data.Dll",
+    "4": "System.Xml.Dll",
+    "5": "Stimulsoft.Controls.Dll",
+    "6": "Stimulsoft.Base.Dll",
+    "7": "Stimulsoft.Report.Dll"
+  },
+  "Dictionary": {
+    "Variables": {
+      "0": {
+        "Name": "CompanyName",
+        "Alias": "CompanyName",
+        "Type": "System.String"
+      },
+      "1": {
+        "Name": "CompanyAddress",
+        "Alias": "CompanyAddress",
+        "Type": "System.String"
+      },
+      "2": {
+        "Name": "CompanySubDistrict",
+        "Alias": "CompanySubDistrict",
+        "Type": "System.String"
+      },
+      "3": {
+        "Name": "CompanyDistrict",
+        "Alias": "CompanyDistrict",
+        "Type": "System.String"
+      },
+      "4": {
+        "Name": "CompanyProvince",
+        "Alias": "CompanyProvince",
+        "Type": "System.String"
+      },
+      "5": {
+        "Name": "CompanyZipCode",
+        "Alias": "CompanyZipCode",
+        "Type": "System.String"
+      },
+      "6": {
+        "Name": "CompanyTel",
+        "Alias": "CompanyTel",
+        "Type": "System.String"
+      },
+      "7": {
+        "Name": "CompanyFax",
+        "Alias": "CompanyFax",
+        "Type": "System.String"
+      },
+      "8": {
+        "Name": "CustomerIDCard",
+        "Alias": "CustomerIDCard",
+        "Type": "System.String"
+      },
+      "9": {
+        "Name": "CustName",
+        "Alias": "CustName",
+        "Type": "System.String"
+      },
+      "10": {
+        "Name": "CustAddress",
+        "Alias": "CustAddress",
+        "Type": "System.String"
+      },
+      "11": {
+        "Name": "CustSubDistrict",
+        "Alias": "CustSubDistrict",
+        "Type": "System.String"
+      },
+      "12": {
+        "Name": "CustDistrict",
+        "Alias": "CustDistrict",
+        "Type": "System.String"
+      },
+      "13": {
+        "Name": "CustProvince",
+        "Alias": "CustProvince",
+        "Type": "System.String"
+      },
+      "14": {
+        "Name": "CustZipCode",
+        "Alias": "CustZipCode",
+        "Type": "System.String"
+      },
+      "15": {
+        "Name": "CustTel",
+        "Alias": "CustTel",
+        "Type": "System.String"
+      },
+      "16": {
+        "Name": "CustFax",
+        "Alias": "CustFax",
+        "Type": "System.String"
+      },
+      "17": {
+        "Name": "CustIDCard",
+        "Alias": "CustIDCard",
+        "Type": "System.String"
+      },
+      "18": {
+        "Name": "BillDate",
+        "Alias": "BillDate",
+        "Type": "System.String"
+      },
+      "19": {
+        "Name": "CustBranch",
+        "Alias": "CustBranch",
+        "Type": "System.String"
+      },
+      "20": {
+        "Name": "BillDueDate",
+        "Alias": "BillDueDate",
+        "Type": "System.String"
+      },
+      "21": {
+        "Name": "PayType",
+        "Alias": "PayType",
+        "Type": "System.String"
+      },
+      "22": {
+        "Name": "TxtTotal",
+        "Alias": "TxtTotal",
+        "Type": "System.String"
+      },
+      "23": {
+        "Name": "TxtDate",
+        "Alias": "TxtDate",
+        "Type": "System.String"
+      },
+      "24": {
+        "Name": "NetTotal",
+        "Alias": "NetTotal",
+        "Type": "System.Decimal"
+      },
+      "25": {
+        "Name": "DocID",
+        "Alias": "DocID",
+        "Type": "System.String"
+      },
+      "26": {
+        "Name": "remake",
+        "Alias": "remake",
+        "Type": "System.String"
+      }
+    },
+    "DataSources": {
+      "0": {
+        "Ident": "StiDataTableSource",
+        "Name": "root",
+        "Alias": "root",
+        "Columns": {
+          "0": {
+            "Name": "DocID",
+            "Index": -1,
+            "NameInSource": "DocID",
+            "Alias": "DocID",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "DocDate",
+            "Index": -1,
+            "NameInSource": "DocDate",
+            "Alias": "DocDate",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "Product",
+            "Index": -1,
+            "NameInSource": "Product",
+            "Alias": "Product",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "CarNumber",
+            "Index": -1,
+            "NameInSource": "CarNumber",
+            "Alias": "CarNumber",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "Province",
+            "Index": -1,
+            "NameInSource": "Province",
+            "Alias": "Province",
+            "Type": "System.String"
+          },
+          "5": {
+            "Name": "ShippingBegin",
+            "Index": -1,
+            "NameInSource": "ShippingBegin",
+            "Alias": "ShippingBegin",
+            "Type": "System.String"
+          },
+          "6": {
+            "Name": "ShippingEnd",
+            "Index": -1,
+            "NameInSource": "ShippingEnd",
+            "Alias": "ShippingEnd",
+            "Type": "System.String"
+          },
+          "7": {
+            "Name": "PriceTotal",
+            "Index": -1,
+            "NameInSource": "PriceTotal",
+            "Alias": "PriceTotal",
+            "Type": "System.Decimal"
+          },
+          "8": {
+            "Name": "Discount",
+            "Index": -1,
+            "NameInSource": "Discount",
+            "Alias": "Discount",
+            "Type": "System.Decimal"
+          },
+          "9": {
+            "Name": "Remark",
+            "Index": -1,
+            "NameInSource": "Remark",
+            "Alias": "Remark",
+            "Type": "System.String"
+          },
+          "10": {
+            "Name": "Vat",
+            "Index": -1,
+            "NameInSource": "Vat",
+            "Alias": "Vat",
+            "Type": "System.Decimal"
+          }
+        },
+        "NameInSource": "DataList.root"
+      }
+    },
+    "Databases": {
+      "0": {
+        "Ident": "StiJsonDatabase",
+        "Name": "DataList",
+        "Alias": "DateList",
+        "PathData": "C:\\Users\\Yongyuth\\Downloads\\document.json"
+      }
+    }
+  },
+  "Pages": {
+    "0": {
+      "Ident": "StiPage",
+      "Name": "Page1",
+      "Guid": "1b68800c662849e686788590674fb054",
+      "Interaction": {
+        "Ident": "StiInteraction"
+      },
+      "Border": ";;2;;;;;solid:Black",
+      "Brush": "solid:",
+      "Components": {
+        "0": {
+          "Ident": "StiPageHeaderBand",
+          "Name": "PageHeaderBand1",
+          "ClientRectangle": "0,0.2,7.1,1.3",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text1",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0,0.4,7.1,0.9",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{CompanyAddress} ต.{CompanySubDistrict} อ.{CompanyDistrict} จ.{CompanyProvince} {CompanyZipCode} (สำนักงานใหญ่)\r\nเลขประจำตัวผู้เสียภาษีอากร {CustomerIDCard}\r\nโทร. {CompanyTel} แฟกซ์. {CompanyFax}"
+              },
+              "HorAlignment": "Center",
+              "Font": "Cordia New;16;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text2",
+              "Guid": "54a8742468324c29b91fa38cd3036af4",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0,0,7.1,0.4",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{CompanyName}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": "Cordia New;18;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "2": {
+              "Ident": "StiStartPointPrimitive",
+              "Name": "StartPointPrimitive1",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0,1.3,0,0",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "ReferenceToGuid": "9f748155414e4213a5aadd6c237351bb"
+            }
+          }
+        },
+        "1": {
+          "Ident": "StiPageFooterBand",
+          "Name": "PageFooterBand1",
+          "ClientRectangle": "0,13.43,7.1,0.3",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text16",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "4.9,0,2.1,0.3",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "หน้าที่ {PageNumber} / {TotalPageCount}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Bottom",
+              "Font": "Angsana New;14;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            }
+          }
+        },
+        "2": {
+          "Ident": "StiHeaderBand",
+          "Name": "Headerroot",
+          "PrintOn": "OnlyFirstPage",
+          "ClientRectangle": "0,1.9,7.1,2.7",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text3",
+              "Guid": "82155bd69de64e0fa9bc71e3be29cb53",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0,0,7.1,0.4",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "ใบวางบิล / ใบแจ้งหนี้"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Bottom",
+              "Font": "Cordia New;18;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text4",
+              "Guid": "bc3f206665e6402db2e0d016a7b3f802",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0.1,0.4,4.9,1.5",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "ชื่อลูกค้า / CUSTOMER NAME\r\n{CustName} ({CustBranch})\r\n{CustAddress} ตำบล{CustSubDistrict} อำเภอ{CustDistrict}\r\nจังหวัด{CustProvince} {CustZipCode}\r\nเลขที่ประจำตัวผู้เสียภาษี {CustIDCard} โทร.{CustTel} แฟกซ์.{CustFax}"
+              },
+              "VertAlignment": "Bottom",
+              "Font": "Cordia New;16;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text5",
+              "Guid": "52deecc1b49342bdbb9a0cbc4dbf60d1",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "5,0.4,2.1,1.5",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "ต้นฉบับ / ORIGINAL\r\nเลขที่ / No. {DocID}\r\nวันที่ / DATE {BillDate}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Bottom",
+              "Font": "Cordia New;16;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "3": {
+              "Ident": "StiText",
+              "Name": "Text6",
+              "Guid": "174295ca0d624c5783319f90e44f8d7c",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0,1.9,5,0.5",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "รายการ\r\nDESCRIPTION"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": "Cordia New;14;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "4": {
+              "Ident": "StiText",
+              "Name": "Text7",
+              "Guid": "7fd903bdbd104f00b7c410fadb6d7bd5",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "5,1.9,2.1,0.5",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "จำนวนเงิน (บาท)\r\nAMOUNT (BAHT)"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": "Cordia New;14;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "5": {
+              "Ident": "StiText",
+              "Name": "Text23",
+              "Guid": "db5c94109c17472b9ed46b972b6b83b1",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0.1,2.5,4.8,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "รายงานการขนส่ง {TxtDate}"
+              },
+              "VertAlignment": "Bottom",
+              "Font": "Cordia New;14;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "6": {
+              "Ident": "StiHorizontalLinePrimitive",
+              "Name": "HorizontalLinePrimitive1",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0,2.4,7.1,0.01",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "StartCap": ";;;",
+              "EndCap": ";;;"
+            },
+            "7": {
+              "Ident": "StiHorizontalLinePrimitive",
+              "Name": "HorizontalLinePrimitive2",
+              "Guid": "1e4e45d39ec24d119482d0706d0c2ccc",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0,1.9,7.1,0.01",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "StartCap": ";;;",
+              "EndCap": ";;;"
+            },
+            "8": {
+              "Ident": "StiStartPointPrimitive",
+              "Name": "StartPointPrimitive2",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "5,1.9,0,0",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "ReferenceToGuid": "6a827e45f138476aa6dd54ef2640bddf"
+            }
+          },
+          "PrintIfEmpty": true
+        },
+        "3": {
+          "Ident": "StiGroupHeaderBand",
+          "Name": "GroupHeaderBand1",
+          "ClientRectangle": "0,5,7.1,0.2",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text17",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0.1,0,4.8,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "ขนส่ง {root.Product} {root.ShippingBegin} - {root.ShippingEnd}"
+              },
+              "VertAlignment": "Bottom",
+              "Font": "Cordia New;14;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            }
+          },
+          "Condition": {
+            "Value": "{root.Product}{root.ShippingBegin}{root.ShippingEnd}"
+          }
+        },
+        "4": {
+          "Ident": "StiGroupHeaderBand",
+          "Name": "GroupHeaderBand2",
+          "ClientRectangle": "0,5.6,7.1,0.2",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text18",
+              "Guid": "79b1550aed074f2d928e8b5c0f966f6e",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0.1,0,4.8,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "ค่าขนส่งเที่ยวละ {Format(\"{0:#,##0.00}\", root.PriceTotal)} จำนวน {Format(\"{0:#,##0}\", Count())} เที่ยว /รวม {Format(\"{0:#,##0.00}\", Sum(root.PriceTotal))} บาท"
+              },
+              "VertAlignment": "Bottom",
+              "Font": "Cordia New;14;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text20",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "5.1,0,1.9,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Format(\"{0:#,##0.00}\", Sum(root.PriceTotal))}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Bottom",
+              "Font": "Cordia New;14;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            }
+          },
+          "Condition": {
+            "Value": "{root.Product}{root.ShippingBegin}{root.ShippingEnd}{root.PriceTotal}"
+          }
+        },
+        "5": {
+          "Ident": "StiDataBand",
+          "Name": "DataBand1",
+          "ClientRectangle": "0,6.2,7.1,0.2",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text19",
+              "Guid": "0c578d45d05941f8b40ba089ee483a1a",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0.1,0,4.8,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "วันที่ {root.DocDate} ทะเบียน {root.CarNumber} {root.Province} {root.Remark}"
+              },
+              "VertAlignment": "Bottom",
+              "Font": "Cordia New;14;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            }
+          },
+          "DataSourceName": "root"
+        },
+        "6": {
+          "Ident": "StiGroupFooterBand",
+          "Name": "GroupFooterBand2",
+          "ClientRectangle": "0,6.8,7.1,0",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:"
+        },
+        "7": {
+          "Ident": "StiGroupFooterBand",
+          "Name": "GroupFooterBand1",
+          "ClientRectangle": "0,7.2,7.1,0",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:"
+        },
+        "8": {
+          "Ident": "StiFooterBand",
+          "Name": "FooterBand2",
+          "ClientRectangle": "0,7.6,7.1,0",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:"
+        },
+        "9": {
+          "Ident": "StiFooterBand",
+          "Name": "FooterBand1",
+          "PrintOn": "OnlyLastPage",
+          "ClientRectangle": "0,8,7.1,1.9",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text8",
+              "Guid": "2ba683df82de4b568118e03cef712cab",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0.1,0.04,4.8,0.5",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "จำนวนทั้งสิ้น (ตัวอักษร)\r\n({TxtTotal})"
+              },
+              "VertAlignment": "Bottom",
+              "Font": "Cordia New;14;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text9",
+              "Guid": "7f306de837c8471cad8ae1b13e9ec4b4",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "5.7,0.04,1.3,0.3",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "HideZeros": true,
+              "Text": {
+                "Value": "{Format(\"{0:#,##0.00}\", Sum(root.Discount))}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": "Cordia New;14;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text10",
+              "Guid": "0abec79a91954ddfb8e9577aeaa11268",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "5.7,0.34,1.3,0.3",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "HideZeros": true,
+              "Text": {
+                "Value": "{Format(\"{0:#,##0.00}\", Sum(root.Vat))}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": "Cordia New;14;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "3": {
+              "Ident": "StiText",
+              "Name": "Text11",
+              "Guid": "32f98ae6862645d2bf0051715401415f",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "5.7,0.64,1.3,0.3",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{Format(\"{0:#,##0.00}\", NetTotal)}"
+              },
+              "HorAlignment": "Right",
+              "VertAlignment": "Center",
+              "Font": "Cordia New;14;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "4": {
+              "Ident": "StiText",
+              "Name": "Text21",
+              "Guid": "20b7e0c3e5ad4a6fa92169f51d37e43c",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "5.1,0.04,0.6,0.3",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "HideZeros": true,
+              "Text": {
+                "Value": "{IIF(Sum(root.Discount)==0,0,\"ส่วนลด\")}"
+              },
+              "VertAlignment": "Center",
+              "Font": "Cordia New;14;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "5": {
+              "Ident": "StiText",
+              "Name": "Text22",
+              "Guid": "2900ee98484f4be68873af5456f89a6b",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "5.1,0.64,0.6,0.3",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "ยอดสุทธิ"
+              },
+              "VertAlignment": "Center",
+              "Font": "Cordia New;14;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "6": {
+              "Ident": "StiText",
+              "Name": "Text24",
+              "Guid": "718f44652c2141b499f141cbb3b13487",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "5.1,0.34,0.6,0.3",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "HideZeros": true,
+              "Text": {
+                "Value": "{IIF(Sum(root.Vat)==0,0,\"ภาษี (7%)\")}"
+              },
+              "VertAlignment": "Center",
+              "Font": "Cordia New;14;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "7": {
+              "Ident": "StiText",
+              "Name": "Text12",
+              "Guid": "37b9e6e438fe48cb804fb86228acc83f",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "5.1,1.54,1.9,0.3",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "ผู้วางบิล"
+              },
+              "HorAlignment": "Center",
+              "Font": "Cordia New;14;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "8": {
+              "Ident": "StiText",
+              "Name": "Text14",
+              "Guid": "bfd1b8d55d5f4763b9373d0c8305d917",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0.1,1.54,2,0.3",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "........../........../.........."
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Bottom",
+              "Font": "Cordia New;14;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "9": {
+              "Ident": "StiText",
+              "Name": "Text15",
+              "Guid": "d678dccda90144c293dffbd964de9a99",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0.1,0.94,2,0.5",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "ผู้รับวางบิล / RECEIVED BY"
+              },
+              "HorAlignment": "Center",
+              "Font": "Cordia New;14;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "10": {
+              "Ident": "StiText",
+              "Name": "Text13",
+              "Guid": "7e2f9952c2de400a896eaad7f8c86eaa",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "2.2,0.94,2.8,0.9",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "กำหนดชำระเงินวันที่ / PAYMENT DATE\r\n{PayType}"
+              },
+              "HorAlignment": "Center",
+              "VertAlignment": "Center",
+              "Font": "Cordia New;14;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "11": {
+              "Ident": "StiText",
+              "Name": "Text25",
+              "Guid": "3ab5b61d559b4ecea22ba64358fe9573",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0.1,0.5,4.8,0.4",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{remake}"
+              },
+              "VertAlignment": "Bottom",
+              "Font": "Cordia New;12;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:",
+              "TextBrush": "solid:Black",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Type": "Expression"
+            },
+            "12": {
+              "Ident": "StiHorizontalLinePrimitive",
+              "Name": "HorizontalLinePrimitive3",
+              "Guid": "bb6bf706725c4d5f973e04a219c57477",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0,0.04,7.1,0.01",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "StartCap": ";;;",
+              "EndCap": ";;;"
+            },
+            "13": {
+              "Ident": "StiHorizontalLinePrimitive",
+              "Name": "HorizontalLinePrimitive5",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "5,0.34,2.1,0.01",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "StartCap": ";;;",
+              "EndCap": ";;;"
+            },
+            "14": {
+              "Ident": "StiHorizontalLinePrimitive",
+              "Name": "HorizontalLinePrimitive7",
+              "Guid": "bfa7aac0e2994415a3569801f02b48eb",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "5,1.54,2.1,0.01",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "StartCap": ";;;",
+              "EndCap": ";;;"
+            },
+            "15": {
+              "Ident": "StiHorizontalLinePrimitive",
+              "Name": "HorizontalLinePrimitive4",
+              "Guid": "404cb0142cc04772a0778aa242e30d1f",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0,0.94,7.1,0.01",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "StartCap": ";;;",
+              "EndCap": ";;;"
+            },
+            "16": {
+              "Ident": "StiHorizontalLinePrimitive",
+              "Name": "HorizontalLinePrimitive8",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "0,1.44,2.2,0.01",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "StartCap": ";;;",
+              "EndCap": ";;;"
+            },
+            "17": {
+              "Ident": "StiStartPointPrimitive",
+              "Name": "StartPointPrimitive3",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "2.2,0.94,0,0",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "ReferenceToGuid": "f3ee3f5d6fc44cc3ac9963262918b079"
+            },
+            "18": {
+              "Ident": "StiEndPointPrimitive",
+              "Name": "EndPointPrimitive3",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "2.2,1.84,0,0",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "ReferenceToGuid": "f3ee3f5d6fc44cc3ac9963262918b079"
+            },
+            "19": {
+              "Ident": "StiEndPointPrimitive",
+              "Name": "EndPointPrimitive2",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "5,1.84,0,0",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "ReferenceToGuid": "6a827e45f138476aa6dd54ef2640bddf"
+            },
+            "20": {
+              "Ident": "StiHorizontalLinePrimitive",
+              "Name": "HorizontalLinePrimitive9",
+              "Guid": "ae01aa2446144f94bd88dd0dd55a46fe",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "5,0.64,2.1,0.01",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "StartCap": ";;;",
+              "EndCap": ";;;"
+            },
+            "21": {
+              "Ident": "StiEndPointPrimitive",
+              "Name": "EndPointPrimitive1",
+              "MinSize": "0,0",
+              "MaxSize": "0,0",
+              "ClientRectangle": "7.1,1.84,0,0",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "ReferenceToGuid": "9f748155414e4213a5aadd6c237351bb"
+            }
+          },
+          "PrintAtBottom": true
+        },
+        "10": {
+          "Ident": "StiRectanglePrimitive",
+          "Name": "RectanglePrimitive1",
+          "Guid": "9f748155414e4213a5aadd6c237351bb",
+          "MinSize": "0,0",
+          "MaxSize": "0,0",
+          "ClientRectangle": "0,1.5,7.1,8.34",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          }
+        },
+        "11": {
+          "Ident": "StiVerticalLinePrimitive",
+          "Name": "VerticalLinePrimitive1",
+          "Guid": "6a827e45f138476aa6dd54ef2640bddf",
+          "MinSize": "0,0",
+          "MaxSize": "0,0",
+          "ClientRectangle": "5,3.8,0.01,6.04",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "StartCap": ";;;",
+          "EndCap": ";;;"
+        },
+        "12": {
+          "Ident": "StiVerticalLinePrimitive",
+          "Name": "VerticalLinePrimitive2",
+          "Guid": "f3ee3f5d6fc44cc3ac9963262918b079",
+          "MinSize": "0,0",
+          "MaxSize": "0,0",
+          "ClientRectangle": "2.2,8.94,0.01,0.9",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "StartCap": ";;;",
+          "EndCap": ";;;"
+        }
+      },
+      "PaperSize": "Letter",
+      "PageWidth": 8.5,
+      "PageHeight": 11.0,
+      "Watermark": {
+        "Font": "Cordia New;72;;",
+        "TextBrush": "solid:50,0,0,0"
+      },
+      "Margins": {
+        "Left": 0.7,
+        "Right": 0.7,
+        "Top": 0.5,
+        "Bottom": 0.69
+      },
+      "MirrorMargins": true
+    }
+  }
+}

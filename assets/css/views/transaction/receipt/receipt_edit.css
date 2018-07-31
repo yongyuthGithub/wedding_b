@@ -1,0 +1,99 @@
+#form_billlist #tblform_billlist thead tr th:first-child {
+  max-width: 150px !important;
+  min-width: 150px !important;
+  width: 150px !important;
+  text-align: left;
+}
+#form_billlist #tblform_billlist thead tr th:nth-child(2) {
+  max-width: 120px !important;
+  min-width: 120px !important;
+  width: 120px !important;
+  text-align: center;
+}
+#form_billlist #tblform_billlist thead tr th:nth-child(3) {
+  max-width: 70px !important;
+  min-width: 70px !important;
+  width: 70px !important;
+  text-align: right;
+}
+#form_billlist #tblform_billlist thead tr th:nth-child(4) {
+  max-width: 70px !important;
+  min-width: 70px !important;
+  width: 70px !important;
+  text-align: right;
+}
+#form_billlist #tblform_billlist tbody tr[role=row] td:first-child {
+  max-width: 150px !important;
+  min-width: 150px !important;
+  text-overflow: ellipsis !important;
+  width: 150px !important;
+  overflow: hidden;
+  text-align: left;
+}
+#form_billlist #tblform_billlist tbody tr[role=row] td:nth-child(2) {
+  max-width: 120px !important;
+  min-width: 120px !important;
+  text-overflow: ellipsis !important;
+  width: 120px !important;
+  overflow: hidden;
+  text-align: center;
+}
+#form_billlist #tblform_billlist tbody tr[role=row] td:nth-child(3) {
+  min-width: 70px !important;
+  max-width: 70px !important;
+  width: 70px !important;
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  text-align: right;
+}
+#form_billlist #tblform_billlist tbody tr[role=row] td:nth-child(4) {
+  min-width: 70px !important;
+  max-width: 70px !important;
+  width: 70px !important;
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  text-align: right;
+}
+#form_otherlist #tblform_otherlist thead tr th:first-child {
+  max-width: 20px !important;
+  min-width: 20px !important;
+  width: 20px !important;
+  text-align: left;
+}
+#form_otherlist #tblform_otherlist thead tr th:nth-child(2) {
+  max-width: 200px !important;
+  min-width: 200px !important;
+  width: 200px !important;
+  text-align: left;
+}
+#form_otherlist #tblform_otherlist thead tr th:nth-child(3) {
+  max-width: 70px !important;
+  min-width: 70px !important;
+  width: 70px !important;
+  text-align: right;
+}
+#form_otherlist #tblform_otherlist tbody tr[role=row] td:first-child {
+  max-width: 20px !important;
+  min-width: 20px !important;
+  text-overflow: ellipsis !important;
+  width: 20px !important;
+  overflow: hidden;
+  text-align: left;
+}
+#form_otherlist #tblform_otherlist tbody tr[role=row] td:nth-child(2) {
+  max-width: 200px !important;
+  min-width: 200px !important;
+  text-overflow: ellipsis !important;
+  width: 200px !important;
+  overflow: hidden;
+  text-align: left;
+}
+#form_otherlist #tblform_otherlist tbody tr[role=row] td:nth-child(3) {
+  min-width: 70px !important;
+  max-width: 70px !important;
+  width: 70px !important;
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  text-align: right;
+}
+/*# sourceMappingURL=receipt_edit.css.map */
